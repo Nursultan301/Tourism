@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Post(models.Model):
+    """ Посты """
     title = models.CharField("Называние", max_length=50)
     img = models.ImageField("Фото", upload_to="osh/")
     description = models.TextField("Описание")
@@ -16,6 +17,7 @@ class Post(models.Model):
 
 
 class Trips(models.Model):
+    """ Туры """
     TOUT_TYPE = (
         ('1', 'Однодневный'),
         ('2', 'Многодневный'),
@@ -51,6 +53,7 @@ class Trips(models.Model):
 
 
 class Food(models.Model):
+    """ Еда """
     title = models.CharField("Называние", max_length=50)
     img = models.ImageField("Фото")
     description = models.TextField("Описание")
