@@ -1,0 +1,162 @@
+<!doctype html>
+{% load static %}
+{% url 'post' as post %}
+{% url 'trips' as trips %}
+{% url 'food' as food %}
+{% load contact_tags %}
+<html lang="en">
+<head>
+    <title>Ошская область</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide"
+      data-aos-duration="800" data-aos-delay="0">
+
+
+<div class="site-wrap" id="home-section">
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+                <div class="col-3 ">
+                    <div class="site-logo">
+                        <a href="/" class="font-weight-bold">
+                            <!-- <img src="images/logo.png" alt="Image" class="img-fluid"> -->
+                            <span style="color: coral;" class="backdrop">Osh</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-9  text-right">
+                    <span class="d-inline-block d-lg-none"><a href="#"
+                                          class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span
+                            class="icon-menu h3 text-white"></span></a></span>
+                    <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                            <li class="{% if request.path == post %}active{% endif %}">
+                                <a href="{% url 'post' %}" class="nav-link">Главная</a>
+                            </li>
+                            <li class="{% if request.path == trips %}active{% endif %}">
+                                <a href="{% url 'trips' %}" class="nav-link">Туры</a>
+                            </li>
+                            <li class="{% if request.path == food %}active{% endif %}">
+                                <a href="{% url 'food' %}" class="nav-link">Еды</a>
+                            </li>
+                            <!--                            <li>-->
+                            <!--                                <a href="contact.html" class="nav-link">Контакты</a>-->
+                            <!--                            </li>-->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <footer class="site-footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2 class="footer-heading mb-3">Instagram</h2>
+                    <div class="row">
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img1.jpg' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img2.jpg' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img3.jpg' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img4.png' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img5.jpg' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                        <div class="col-4 gal_col">
+                            <a href="#"><img src="{% static 'images/img6.jpg' %}" alt="Image" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 ml-auto">
+                    <div class="row">
+                        <div class="col-lg-6 ml-auto">
+                            <ul class="list-unstyled">
+                                <li class="{% if request.path == post %}active{% endif %}">
+                                    <a href="{% url 'post' %}" class="nav-link">Главная</a>
+                                </li>
+                                <li class="{% if request.path == trips %}active{% endif %}">
+                                    <a href="{% url 'trips' %}" class="nav-link">Туры</a>
+                                </li>
+                                <li class="{% if request.path == food %}active{% endif %}">
+                                    <a href="{% url 'food' %}" class="nav-link">Еды</a>
+                                </li>
+                                <!--                            <li>-->
+                                <!--                                <a href="contact.html" class="nav-link">Контакты</a>-->
+                                <!--                            </li>-->
+                            </ul>
+                        </div>
+                            {% contact_form %}
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <script>document.write(new Date().getFullYear());</script>
+                            Бишкек | Бишкекский технический колледж <i class="icon-heart text-danger"
+                                                                       aria-hidden="true"></i>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>

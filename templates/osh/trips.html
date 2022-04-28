@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-7">
+            <div class="heading-39101 mb-5">
+                <span class="backdrop text-center">region Osh</span>
+                <span class="subtitle-39191">osh</span>
+                <h3>ОДНОДНЕВНЫЕ И МНОГОДНЕВНЫЕ ТУРЫ ПО КЫРГЫЗСТАНУ</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {% for trip in obj_trips %}
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="listing-item">
+                <div class="listing-image">
+                    <img src="{{ trip.img.url }}" alt="Image" class="img-fluid">
+                </div>
+                <div class="listing-item-content">
+                    <a class="px-3 mb-3 category bg-primary" href="#">{{ trip.price }}$</a>
+                    <h2 class="mb-1"><a href="{% url 'trips_detail' pk=trip.pk %}">{{ trip.title }}</a></h2>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-12 mt-5 mb-5 text-center">
+    {% for page in page_obj.paginator.page_range %}
+    <!--            <div class="page-item {% if page == page_obj.number %} active {% endif %}">-->
+    <a class="p-3" href="?page={{ page }}">
+        {{ page }}
+    </a>
+    <!--            </div>-->
+    {% endfor %}
+</div>
+{% endblock content %}
+
+
+
