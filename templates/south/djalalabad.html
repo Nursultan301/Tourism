@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% block title %}Джалал-Абадская область{% endblock title %}
+
+{% block content %}
+<div class="site-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="heading-39101 mb-5">
+                    <span class="backdrop">Jalal-Abad</span>
+                    <span class="subtitle-39191">Jalal-Abad</span>
+                    <h3>{% trans "Джалал-Абадская область" %}</h3>
+                </div>
+                <p>
+                    {% blocktrans %}Джалал-Абадская область — это, пожалуй, самая разнообразная как в культурном, так и географическом плане область Кыргызстана. Именно здесь соприкасаются культуры северной и южной части страны, а природные богатства настолько различны и вместе с тем удивительны, что посмотреть все едва ли удастся меньше чем за пару недель..{% endblocktrans %}
+                </p>
+            </div>
+            <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
+                <img src="{% static 'images/traveler.jpg' %}" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            {% for post in djalalabad %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="post-entry-1 h-100">
+                    <a href="{{ post.get_absolute_url }}">
+                        <img src="{{ post.img.url }}" alt="Image"
+                             class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                        <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.description|safe|linebreaks|truncatewords:18 }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-12 mt-5 text-center">
+            {% for page in page_obj.paginator.page_range %}
+            <a class="p-3" href="?page={{ page }}">
+                {{ page }}
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

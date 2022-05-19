@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-19 14:01+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:56 templates/base.html:122 templates/south/index.html:95
+msgid "Ош"
+msgstr "Osh"
+
+#: templates/base.html:59 templates/base.html:125
+msgid "Джалал Абад"
+msgstr "Djalal Abad"
+
+#: templates/base.html:62 templates/base.html:128
+msgid "Баткен"
+msgstr "Batken"
+
+#: templates/base.html:77
+msgid "Change"
+msgstr ""
+
+#: templates/base.html:146
+msgid "Бишкек | Бишкекский технический колледж"
+msgstr "Bishkek | Bishkek Technical College"
+
+#: templates/contact/tags/form.html:3
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: templates/contact/tags/form.html:7
+msgid "Отправить"
+msgstr "Send"
+
+#: templates/south/batken.html:13
+msgid "Баткенская область"
+msgstr "Batken region"
+
+#: templates/south/batken.html:16
+msgid ""
+"\n"
+"                        Баткенская область — это самая отдаленная область "
+"Кыргызстана, располагающаяся у подножия могучего\n"
+"                        Туркестанского хребта. Этот регион довольно редко "
+"посещается туристами, но поверьте, здесь есть на\n"
+"                        что посмотреть!\n"
+"                    "
+msgstr ""
+"\n"
+"Batken region is the most remote region of Kyrgyzstan, located at the foot "
+"of the mighty \n"
+"Turkestan ridge. This region is quite rarely visited by tourists, but "
+"believe me, there is \n"
+"something to see here!"
+
+#: templates/south/djalalabad.html:13
+msgid "Джалал-Абадская область"
+msgstr "Jalal-Abad region"
+
+#: templates/south/djalalabad.html:16
+msgid ""
+"Джалал-Абадская область — это, пожалуй, самая разнообразная как в "
+"культурном, так и географическом плане область Кыргызстана. Именно здесь "
+"соприкасаются культуры северной и южной части страны, а природные богатства "
+"настолько различны и вместе с тем удивительны, что посмотреть все едва ли "
+"удастся меньше чем за пару недель.."
+msgstr ""
+"Jalal-Abad region is perhaps the most culturally and geographically diverse "
+"region of Kyrgyzstan. It is here that the cultures of the northern and "
+"southern parts of the country adjoin, and the natural resources are so "
+"different and at the same time amazing that you can hardly see everything in "
+"less than a couple of weeks."
+
+#: templates/south/index.html:11
+msgid "Туризм КР <br> природа южной части"
+msgstr "Tourism of the Kyrgyz Republic <br> nature of the southern part"
+
+#: templates/south/index.html:13
+msgid ""
+"\n"
+"                        На территории Кыргызстана доминирует Тянь-Шань, "
+"большой горный хребет, который делит страну на\n"
+"                        северную и южную части. Наиболее густонаселенными "
+"частями страны являются широкие долины вокруг\n"
+"                        гор, такие как Чуйская долина на севере и Ферганская "
+"долина на юге. В этих районах находятся\n"
+"                        крупнейшие города Кыргызстана Бишкек и Ош, а также "
+"большинство сельскохозяйственных ферм. От\n"
+"                        городов рукой подать до множества прекрасных "
+"природных мест: гор, природных заповедников, озер\n"
+"                        или просто очаровательных пейзажей вдоль дороги.\n"
+"                    "
+msgstr ""
+"\n"
+"The territory of Kyrgyzstan is dominated by the Tien Shan, a large mountain "
+"range that divides the country into \n"
+"the northern and southern parts. The most densely populated parts of the "
+"country are the wide valleys around \n"
+"mountains, such as the Chui Valley in the north and the Ferghana Valley in "
+"the south. In these areas there are \n"
+"The largest cities of Kyrgyzstan are Bishkek and Osh, as well as most "
+"agricultural farms. \n"
+"Cities are within easy reach of many beautiful natural places: mountains, "
+"nature reserves, lakes \n"
+"or just charming landscapes along the road."
+
+#: templates/south/index.html:25
+msgid "Смотреть видео"
+msgstr "Watch the video"
+
+#: templates/south/index.html:40
+msgid "Ошская область"
+msgstr "Osh region"
+
+#: templates/south/index.html:42
+msgid ""
+"\n"
+"                    область — сердце южного Кыргызстана. Это место где "
+"соединяется высокогорное традиционное\n"
+"                    кыргызское кочевье c узбекской культурой Ферганской "
+"долины. Древнейшие города Ош и Узген, чей\n"
+"                    возраст насчитывает больше 3000 лет, соседствуют с "
+"древними и высокими горами Памира и Тянь-Шаня,\n"
+"                    образуя удивительное сочетание пейзажей и культур.\n"
+"                "
+msgstr ""
+"\n"
+"The region is the heart of southern Kyrgyzstan. This is the place where the "
+"highland traditional connects \n"
+"Kyrgyz nomads with Uzbek culture of the Ferghana Valley. The oldest cities "
+"of Osh and Uzgen, whose \n"
+"the age is more than 3000 years old, adjacent to the ancient and high "
+"mountains of the Pamirs and Tien Shan, \n"
+"forming an amazing combination of landscapes and cultures."
+
+#: templates/south/index.html:96
+msgid ""
+"\n"
+"                    области другая сторона. Именно тут соседствуют две самые "
+"большие\n"
+"                    среднеазиатские горные системы — Тянь-Шань и Памир, "
+"образуя удивительное природное и\n"
+"                    географическое многообразие. Многочисленные ущелья и "
+"горные долины славны своей нетронутой\n"
+"                    природой и притягивают к себе туристов со всего мира. В "
+"этих местах можно найти все — сложные\n"
+"                    туристические маршруты для треккинга и велотуризма, "
+"высокие горные пики для альпинизма и\n"
+"                    скалолазания. Широко известны пещеры Ошской области и ее "
+"целебные источники. Широкие просторы\n"
+"                    Алайской долины хранят в себе уклад кочевой кыргызской "
+"жизни, не изменившегося с самых давних\n"
+"                    времен. Одна из высочайших вершин Кыргызстана и Памира — "
+"семятысячный пик Ленина также находится\n"
+"                    здесь, в Ошской области. Одним словом здесь есть что "
+"посмотреть любому туристу.\n"
+"                "
+msgstr ""
+"\n"
+"the areas are the other side. It is here that the two largest ones are "
+"adjacent \n"
+"Central Asian mountain systems — Tien Shan and Pamir, forming an amazing "
+"natural and \n"
+"geographical diversity. Numerous gorges and mountain valleys are famous for "
+"their untouched \n"
+"nature attracts tourists from all over the world. In these places you can "
+"find everything — complex \n"
+"hiking trails for trekking and cycling, high mountain peaks for "
+"mountaineering and \n"
+"rock climbing. The caves of the Osh region and its healing springs are "
+"widely known. Wide open spaces \n"
+"The Alai Valley preserves the way of nomadic Kyrgyz life, which has not "
+"changed since the earliest \n"
+"times. One of the highest peaks of Kyrgyzstan and the Pamirs — the seven-"
+"thousandth peak of Lenin is also located \n"
+"here, in the Osh region. In a word, there is something to see for any "
+"tourist."
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""

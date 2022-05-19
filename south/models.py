@@ -2,7 +2,10 @@ from django.db import models
 
 
 # Create your models here.
-class Post(models.Model):
+from django.urls import reverse
+
+
+class Osh(models.Model):
     """ Посты """
     title = models.CharField("Называние", max_length=50)
     img = models.ImageField("Фото", upload_to="osh/")
@@ -11,9 +14,46 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'pk': self.pk})
+
     class Meta:
-        verbose_name = 'Пост'
-        verbose_name_plural = 'Посты'
+        verbose_name = 'Ош'
+        verbose_name_plural = 'Ош'
+
+
+class DjalalAbad(models.Model):
+    """ Посты """
+    title = models.CharField("Называние", max_length=50)
+    img = models.ImageField("Фото", upload_to="djalalabad/")
+    description = models.TextField("Описание")
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('dj-detail', kwargs={'pk': self.pk})
+
+    class Meta:
+        verbose_name = 'Джалал-Абад'
+        verbose_name_plural = 'Джалал-Абад'
+
+
+class Batken(models.Model):
+    """ Посты """
+    title = models.CharField("Называние", max_length=50)
+    img = models.ImageField("Фото", upload_to="batken/")
+    description = models.TextField("Описание")
+
+    def get_absolute_url(self):
+        return reverse('ba-detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Баткен'
+        verbose_name_plural = 'Баткен'
 
 
 class Trips(models.Model):

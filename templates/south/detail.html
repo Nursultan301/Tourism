@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static%}
+{% block content %}
+<div class="site-section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-12">
+                <div class="heading-39101 mb-5 ">
+                    <span class="backdrop text-center">region osh</span>
+                    <span class="subtitle-39191">Osh</span>
+                    <h3>{{ object.title }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-md-6">
+                <p>{{ object.description|safe }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ object.img.url }}" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,8 +1,9 @@
+{% load i18n %}
 <div class="col-lg-6">
-    <h2 class="footer-heading mb-4">Обратная связь</h2>
+    <h2 class="footer-heading mb-4">{% trans "Обратная связь" %}</h2>
     <form action="{% url 'contact' %}" method="post" class="d-flex">
         {% csrf_token %}
         {{ contact_form }}
-        <input type="submit" value="Отправить" class="btn btn-primary">
+        <input type="submit" value="{% trans 'Отправить' %} " class="btn btn-primary">
     </form>
 </div>

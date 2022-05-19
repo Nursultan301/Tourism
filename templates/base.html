@@ -1,12 +1,10 @@
 <!doctype html>
-{% load static %}
+{% load static i18n contact_tags %}
 {% url 'post' as post %}
 {% url 'trips' as trips %}
-{% url 'food' as food %}
-{% load contact_tags %}
 <html lang="en">
 <head>
-    <title>Ошская область</title>
+    <title>Туризм Кр</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -44,28 +42,41 @@
                     <div class="site-logo">
                         <a href="/" class="font-weight-bold">
                             <!-- <img src="images/logo.png" alt="Image" class="img-fluid"> -->
-                            <span style="color: coral;" class="backdrop">Osh</span>
+                            <span style="color: coral;" class="backdrop">south</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-9  text-right">
                     <span class="d-inline-block d-lg-none"><a href="#"
-                                          class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span
+                                                              class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span
                             class="icon-menu h3 text-white"></span></a></span>
                     <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                            <li class="{% if request.path == post %}active{% endif %}">
-                                <a href="{% url 'post' %}" class="nav-link">Главная</a>
+                            <li class="{% if request.path == osh %}active{% endif %}">
+                                <a href="{% url 'osh' %}" class="nav-link">{% trans 'Ош' %}</a>
                             </li>
-                            <li class="{% if request.path == trips %}active{% endif %}">
-                                <a href="{% url 'trips' %}" class="nav-link">Туры</a>
+                            <li class="{% if request.path == djalalabad %}active{% endif %}">
+                                <a href="{% url 'djalalabad' %}" class="nav-link">{% trans 'Джалал Абад' %}</a>
                             </li>
-                            <li class="{% if request.path == food %}active{% endif %}">
-                                <a href="{% url 'food' %}" class="nav-link">Еды</a>
+                            <li class="{% if request.path == batken %}active{% endif %}">
+                                <a href="{% url 'batken' %}" class="nav-link">{% trans 'Баткен' %}</a>
                             </li>
-                            <!--                            <li>-->
-                            <!--                                <a href="contact.html" class="nav-link">Контакты</a>-->
-                            <!--                            </li>-->
+                            <li>
+                               <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                                    <select name="language">
+                                        {% get_current_language as LANGUAGE_CODE %}
+                                        {% get_available_languages as LANGUAGES %}
+                                        {% get_language_info_list for LANGUAGES as languages %}
+                                        {% for language in languages %}
+                                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                                                {{ language.name_local }} ({{ language.code }})
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                    <input type="submit" value="{% trans 'Change' %}" />
+                                </form>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -107,21 +118,22 @@
                     <div class="row">
                         <div class="col-lg-6 ml-auto">
                             <ul class="list-unstyled">
-                                <li class="{% if request.path == post %}active{% endif %}">
-                                    <a href="{% url 'post' %}" class="nav-link">Главная</a>
+                                <li class="{% if request.path == osh %}active{% endif %}">
+                                    <a href="{% url 'osh' %}" class="nav-link">{% trans 'Ош' %}</a>
                                 </li>
-                                <li class="{% if request.path == trips %}active{% endif %}">
-                                    <a href="{% url 'trips' %}" class="nav-link">Туры</a>
+                                <li class="{% if request.path == djalalabad %}active{% endif %}">
+                                    <a href="{% url 'djalalabad' %}" class="nav-link">{% trans 'Джалал Абад' %}</a>
                                 </li>
-                                <li class="{% if request.path == food %}active{% endif %}">
-                                    <a href="{% url 'food' %}" class="nav-link">Еды</a>
+                                <li class="{% if request.path == batken %}active{% endif %}">
+                                    <a href="{% url 'batken' %}" class="nav-link">{% trans 'Баткен' %}</a>
                                 </li>
+
                                 <!--                            <li>-->
                                 <!--                                <a href="contact.html" class="nav-link">Контакты</a>-->
                                 <!--                            </li>-->
                             </ul>
                         </div>
-                            {% contact_form %}
+                        {% contact_form %}
                     </div>
                 </div>
             </div>
@@ -131,7 +143,7 @@
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             <script>document.write(new Date().getFullYear());</script>
-                            Бишкек | Бишкекский технический колледж <i class="icon-heart text-danger"
+                            {% trans "Бишкек | Бишкекский технический колледж" %} <i class="icon-heart text-danger"
                                                                        aria-hidden="true"></i>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
